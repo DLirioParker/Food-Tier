@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #171725;
+    color: #fff;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #1d1d31;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    flex: 1;
+    padding: 1.5rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+#hero h1 {
+    font-size: 2.8rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hero button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 1rem 2.0rem;
+    font-size: 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#hero button:hover {
+    background-color: #cb3600;
+}
+
+#tier-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.tier-label {
+    width: 80px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: white;
+}
+
+.tier-items {
+    flex: 1;
+    background-color: #1d1d31;
+    border-radius: 8px;
+    min-height: 100px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.food-card {
+    background-color: #1d1d31;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #0e0e1b;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(40, 40, 73, 0.7);
+}
+
+.emoji {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.food-card p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+section:last-of-type {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+section:last-of-type button {
+    background-color: #9bff90;
+    color: rgb(4, 4, 37);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+section:last-of-type button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(87, 141, 87, 0.66);
+}
+
+#craving-result {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color: #ffd777;
+}
+
+footer {
+    background-color: #19192c;
+    padding: 0.25rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer small {
+    font-size: 1rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
